@@ -1,0 +1,133 @@
+#menu-movil{
+    display: none;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+#sect1 {
+    background-color: #3333337d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+  }
+  video {
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 119.5vh;
+    z-index: -1;
+  }
+*{
+    scroll-behavior: smooth;
+}
+body{
+    scroll-snap-type: y mandatory;
+    scroll-padding: 50px; 
+}
+#landing{
+    background-image: url("./img/mercedes-background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+.shadow-golden{
+    text-shadow: 1px 1px 1px rgb(229, 206, 0);
+}
+.bg-autolux{
+    background-color: #1f211e;
+}
+@font-face {
+    font-family: autolux;
+    src: url(./fonts/Midlandluxury\ Regular.otf);
+}
+@font-face {
+    font-family: autolux-bold;
+    src: url(./fonts/Midlandluxury\ Bold.otf);
+}
+.font-autolux{
+    font-family: autolux;
+}
+.font-autolux-bold{
+    font-family: autolux-bold;
+}
+.text-nav{
+    font-size: 0.6rem;
+}
+.bg-card-price{
+    background: rgb(28,27,27);
+    background: linear-gradient(54deg, rgba(28,27,27,1) 35%, rgba(92,95,96,1) 100%);
+}
+.text-shadow-black{
+    text-shadow: 1px 1px 2px black;
+}
+.hover-contact{
+    transition: 1s;
+}
+.hover-contact:hover{
+    width: 70%;
+}
+.text-xxs{
+    font-size: 0.7rem;
+}
+.text-xxxs{
+    font-size: 0.7rem !important;
+}
+.text-tiny{
+    font-size: 0.5rem !important;
+}
+.language{
+    width: 1%;
+    height: 1%;
+}
+.ms-30{
+    margin-inline-start: 8rem;
+}
+.color-checkbox{
+    accent-color: rgb(229, 206, 0);
+}
+
+@media (max-width: 750px) {
+    .text-nav{
+        font-size: 0.8rem;
+        line-height: 2.5rem;
+    }
+    #sect1{
+        height: 100vh;
+    }
+    video{
+        height: 100vh !important;
+    }
+    .title{
+        line-height: 4rem !important;
+        text-align: center;
+    }
+    .text-xxxs{
+        font-size: 0.6rem !important;
+    }
+  }
+
+
+  
+@media (min-width: 751px) and (max-width: 1450px) {
+    .text-nav{
+        font-size: 0.8rem;
+        line-height: 2.5rem;
+    }
+    #sect1{
+        height: 100vh;
+    }
+    video{
+        height: 100vh !important;
+    }
+    .title{
+        line-height: 8.5rem !important;
+        text-align: center;
+    }
+  }
