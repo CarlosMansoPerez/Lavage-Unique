@@ -1,3 +1,4 @@
+
 #menu-movil{
     display: none;
     padding-top: 10%;
@@ -7,7 +8,7 @@
     background-color: #3333337d;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     flex-direction: column;
     position: relative;
@@ -21,7 +22,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 119.5vh;
+    height: 100vh;
     z-index: -1;
   }
 *{
@@ -41,24 +42,111 @@ body{
     text-shadow: 1px 1px 1px rgb(229, 206, 0);
 }
 .bg-autolux{
-    background-color: #1f211e;
+    background-color: transparent;
+    z-index: 99;
 }
-@font-face {
+
+.font-autolux {
+      font-family: "El Messiri", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+}
+
+.font-autolux-bold {
+    font-family: "El Messiri", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-cormorant {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-cormorant-bold {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+.pricing-table {
+    border-collapse: collapse;
+    margin: 20px;
+    margin-top: 40px !important;
+    text-align: center;
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+.pricing-table th, .pricing-table td {
+    border: 3px solid white;
+    padding: 30px;
+}
+
+/* Contenedor con scroll horizontal */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Activa el scroll horizontal */
+}
+
+/* Ajuste de la tabla para asegurar que no se haga más pequeña en pantallas pequeñas */
+.pricing-table {
+    min-width: 600px; /* Evita que la tabla se haga demasiado pequeña */
+}
+  
+
+/* @font-face {
     font-family: autolux;
     src: url(./fonts/Midlandluxury\ Regular.otf);
 }
 @font-face {
     font-family: autolux-bold;
     src: url(./fonts/Midlandluxury\ Bold.otf);
+} */
+.bg-gray{
+    background-color: #333333;
 }
-.font-autolux{
-    font-family: autolux;
+.bg-beige{
+    background-color: #F8F5F0;
 }
-.font-autolux-bold{
-    font-family: autolux-bold;
+.text-beige{
+    color: #F8F5F0;
 }
+.bg-red{
+    background-color: #6A1C1C;
+}
+.text-red{
+    color: #6A1C1C;
+}
+.bg-gradient{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(49,49,49,1) 47%, rgba(106,28,28,1) 100%);
+}
+.bg-gradient-2{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(49,49,49,1) 47%, rgba(106,28,28,1) 100%);
+}
+
+.card-service{
+    transition: .5s;
+}
+.card-service:hover{
+    filter: brightness(1.4);
+    transform: scale(1.08);
+    cursor: pointer;
+    text-shadow: 2px 2px 8px black;
+}
+
 .text-nav{
-    font-size: 0.6rem;
+    font-size: 1.2rem;
 }
 .bg-card-price{
     background: rgb(28,27,27);
@@ -93,9 +181,15 @@ body{
     accent-color: rgb(229, 206, 0);
 }
 
+.whatsapp{
+    position: fixed;
+    left: 95%;
+    top: 88%;
+}
+
 @media (max-width: 750px) {
     .text-nav{
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 2.5rem;
     }
     #sect1{
@@ -111,13 +205,24 @@ body{
     .text-xxxs{
         font-size: 0.6rem !important;
     }
+    .pricing-table th, .pricing-table td {
+        padding: 10px;
+    }
+    .pricing-table {
+        min-width: 400px; /* Evita que la tabla se haga demasiado pequeña */
+    }
+    .whatsapp{
+        position: fixed;
+        left: 80%;
+        top: 90%;
+    }
   }
 
 
   
 @media (min-width: 751px) and (max-width: 1450px) {
     .text-nav{
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 2.5rem;
     }
     #sect1{
@@ -130,4 +235,17 @@ body{
         line-height: 8.5rem !important;
         text-align: center;
     }
+    .pricing-table th, .pricing-table td {
+        padding: 10px;
+    }
+    .whatsapp{
+        position: fixed;
+        left: 92%;
+        top: 94%;
+    }
   }
+
+
+
+
+  
