@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lavado de coches en Marbella. Detailing en Marbella para coches de lujo y alta gama. Autolux se encarga de proporcionar el mejor servicio para los vehículos de nuestros clientes.">
+    <meta name="description" content="Car wash in Marbella. Detailing in Marbella for luxury and high-end cars. Autolux is in charge of providing the best service for our clients' vehicles.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="/img/Logo Autolux - 1.svg">
+    <link rel="icon" type="image/x-icon" href="/img/logo_LU.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1MHPTT164"></script>
 <script>
@@ -18,51 +23,61 @@
 
   gtag('config', 'G-F1MHPTT164');
 </script>
-    <title>Lavage Unique - Premium Car Wash in Marbella</title>
+
+    <title>Lavage Unique - Car wash & detailing in Marbella</title>
 </head>
 <body id="body">
 
     <!-- MENU SUPERIOR -->
 
-    <nav class="border-gray-200 bg-autolux">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src="./img/logo_LU.png" class="h-14" alt="Logo" />
-              <span class="self-center texlgxl font-semibold whitespace-nowrap text-white font-autolux">Lavage Unique</span>
+    <nav class="border-gray-200 bg-autolux absolute w-full">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 pt-8 w-full bg-black md:bg-transparent">
+
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse hidden xl:flex">
+              <img src="./img/LU_logo.svg" class="h-12" alt="Logo" />
           </a>
+
           <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg lg:hidden  focus:outline-none focus:ring-2" aria-controls="navbar-default" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
               </svg>
           </button>
+
           <div class="hidden w-full lg:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:items-center md:h-[40px] md:bg-autolux">
               <li>
-                <a href="#inicio" class="text-white text-nav block py-2 px-3 rounded md:hover:text-yellow-500 md:p-0 font-autolux">Home</a>
+                <a href="#servicios" class="text-white uppercase text-nav block py-2 px-3 rounded  md:p-0 font-autolux">Services</a>
               </li>
               <li>
-                <a href="#servicios" class="text-white text-nav block py-2 px-3 rounded md:hover:text-yellow-500 md:p-0 font-autolux">Services</a>
+                <a href="#precios" class="text-white uppercase text-nav block py-2 px-3 rounded  md:p-0 font-autolux">Prices</a>
               </li>
               <li>
-                <a href="#reservas" class="text-white text-nav block py-2 px-3 rounded md:hover:text-yellow-500 md:p-0 font-autolux">Bookings</a>
+                <a href="./lavado-de-coches-a-domicilio-marbella.html" class="text-white uppercase text-nav block py-2 px-3 rounded  md:p-0 font-autolux">At home</a>
               </li>
               <li>
-                <a href="#galeria" class="text-white text-nav block py-2 px-3 rounded md:hover:text-yellow-500 md:p-0 font-autolux">Gallery</a>
-              </li>
-              <!-- <li>
-                <a href="#ubicacion" class="text-white text-nav block py-2 px-3 rounded md:hover:text-yellow-500 md:p-0 font-autolux">Ubicación</a>
-              </li> -->
-              <li>
-                <a href="#contacto" class="text-white text-nav block py-2 px-3 rounded md:hover:text-yellow-500 md:p-0 font-autolux">Contact</a>
+                <a href="#galeria" class="text-white uppercase text-nav block py-2 px-3 rounded  md:p-0 font-autolux">Gallery</a>
               </li>
               <li>
-                <a href="./index.html" class="text-white text-nav block py-2 px-3 rounded md:hover:text-yellow-500 md:p-0 font-autolux">
-                    <img class="h-[45px] hover:scale-105 transition" src="./img/spain-flag.svg" alt="">
-                </a>
+                <a href="#contacto" class="text-white uppercase text-nav block py-2 px-3 rounded  md:p-0 font-autolux">Contact</a>
               </li>
             </ul>
           </div>
+
+          <div class="flex flex-row ps-6">
+
+            <a href="./index.html" class="text-white text-nav block  px-1 xl:px-1 rounded md:p-0 font-autolux">
+                ES
+            </a>
+            <span class="text-white text-nav block  px-1 xl:px-2 rounded md:p-0 font-autolux mx-1 xl:mx-1">|</span>
+            <p href="./index-en.html" class="separador disabled text-gray-400  text-nav block  px-3 rounded  md:p-0 font-autolux" title="English">
+                EN
+            </p>
+
+
+
+          </div>
+
         </div>
     </nav>
       
@@ -70,99 +85,98 @@
     <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-        <!-- LANDING -->
-        <!-- <section id="landing" class="flex flex-col justify-center items-center w-full" style="height: 90vh;">
-
-            <video src="./img/Autolux.mp4"></video>
-            <h2 class="text-5xl md:text-7xl text-white font-autolux-bold">Autolux</h2>
-            <span class="uppercase text-white mt-12 md:text-lg font-autolux text-yellow-500">Marbella</span>
-
-        </section> -->
-
         <section id="sect1">
 
             <video src="./img/Autolux.mp4"  autoplay="true" muted="true" loop="true" autoplay muted playsinline></video>
     
-            <h2 class="font-title text-4xl md:text-7xl uppercase font-autolux-bold title">Lavage Unique</h2>
-            <span class="font-text uppercase mt-16 text-xs md:text-sm rounded px-1 font-autolux text-center" style="line-height: 30px;">Detailing and Car Washing <br> Marbella</span>
-    
+            <img src="./img/logo_lavageUnique.svg" alt="Logo Lavage Unique" class="w-[90%] xl:w-[70%]">
+
+            <span class="font-text uppercase mt-6 xl:mt-12 text-md md:text-4xl rounded px-1 font-autolux text-center">Car Wash and Detailing in Marbella</span>
+
+            <div class="mb-72 xl:mb-32 mt-20 flex flex-row gap-6 xl:gap-10">
+                <a href="#precios" class=""><span class="uppercase pt-2 pb-1 px-10 bg-transparent hover:bg-black hover:text-white hover:border hover:border-white border border-white text-white font-autolux-bold text-lg xl:text-xl transition">Precios</span></a>
+                <a href="#contacto" class=""><span class="uppercase pt-2 pb-1 px-10 bg-beige hover:bg-black hover:text-white hover:border hover:border-white border border-white text-black font-autolux-bold text-lg xl:text-xl transition">Reserva</span></a>
+            </div>
+
         </section>
 
         <!-- INICIO -->
-        <section id="inicio" class="w-full h-auto py-10 px-5 bg-black">
+        <section id="inicio" class="w-full h-auto py-12 xl:py-40 px-5 bg-gradient flex flex-col-reverse xl:flex-row justify-center items-start gap-10">
 
-            <h1 class="text-center text-xl md:text-2xl text-white font-autolux-bold" style="line-height: normal;">Luxury car wash in Marbella</h1>
-            <span class="flex justify-center items-center py-2 text-lg w-full uppercase text-yellow-500">Detailing</span>
+            <div class="flex w-full xl:w-1/3">  
+                <img src="./img/mustang-inicio.jpg" alt="">
+            </div>
 
-            <img src="./img/car-interior.webp" class="w-full h-[300px] md:h-[auto] md:w-[50%] md:mx-auto mt-3" alt="luxury car interior"/>
-            <div class="py-2 md:mx-auto md:w-[80%]">
-                <p class="mt-3 w-full text-white font-sans md:text-lg">Lavage Unique, <span class="text-yellow-500">premium luxury car wash</span>. Discover the art of detail in our exclusive car wash centre, we raise the standard of care for your vehicle, offering services from <span class="text-yellow-500">detailing</span> first class for <span class="text-yellow-500">luxury cars</span>.</p>
-                <p class="mt-3 w-full text-white font-sans md:text-lg">Our commitment is to enhance the elegance of your vehicle, using <span class="text-yellow-500">specialised techniques</span> y <span class="text-yellow-500">high quality products</span>. Trust us to transform your car into a masterpiece on wheels! <span class="text-yellow-500">Book your premium wash experience now</span>. </p>
+            <div class="flex flex-col w-full xl:w-1/3 ps-2 xl:ps-10 text-white pt-12">
+
+                <div class="flex flex-row uppercase font-autolux text-md xl:text-lg text-beige"><hr style="width: 30px;" class="mt-3 me-2">Lavage Unique</div>
+
+                <h1 class="font-cormorant text-4xl xl:text-5xl uppercase mt-4">Car Wash and Detailing in Marbella</h1>
+
+                <p class="font-autolux text-lg xl:text-xl mt-10">At Lavage Unique, we specialise in offering a luxury car wash and detailing service in the heart of Marbella.</p>
+                <p class="font-autolux text-lg xl:text-xl mt-5">We know that your vehicle is much more than just a means of transport; it is an extension of your personality and an investment that deserves the utmost care.</p>
+                <p class="font-autolux text-lg xl:text-xl mt-5">With our experience and passion for excellence, we ensure that every car that passes through our hands receives the attention it deserves. We use the highest quality products and state-of-the-art techniques to restore and maintain the shine, smoothness and protection your vehicle needs.</p>
             </div>
 
         </section>
 
         <!-- SERVICIOS -->
-        <section id="servicios" class="w-full h-auto py-32 px-5 bg-black">
+        <section id="servicios" class="w-full h-auto py-20 xl:py-40 px-10 xl:px-5 bg-gradient-2 flex flex-col justify-center xl:justify-start items-center">
 
-            <h2 class="text-center text-xl md:text-2xl text-white font-autolux-bold">Services</h2>
-            <span class="flex justify-center items-center py-2 text-lg w-full uppercase text-yellow-500">Prices & information</span>
+            <h2 class="font-cormorant text-3xl xl:text-5xl text-white uppercase text-center">Our services</h2>
+            <p class="text-beige font-autolux mt-5 text-lg xl:text-xl">Detail and Exquisiteness in Every Corner</p>
 
-            <div class="py-2 md:mx-auto md:w-[80%] flex flex-col lg:flex-row justify-between items-center mt-5">
-                <div style="background-image: url('./img/card\ background.jpg'); background-size: cover;" class="w-80 h-auto min-h-[560px] flex flex-col justify-between items-center py-5 pt-10 border border-black border-8 hover:scale-110 transition">
-                    <div class="w-full h-[20%]">
-                        <div class="w-full h-[60px] flex justify-center items-end text-xl font-autolux-bold text-yellow-500"><span style="text-shadow: 1px 1px 3px gray;">Inside</span></div>
-                    </div>
-                    <div class="w-100 h-[60%] flex flex-col justify-start items-center">
-                        <span class="text-white text-xl my-2">Basic Inside</span>
-                    </div>
-                    <div class="w-100 h-[20%]">
-                        <div class="w-full h-[60px] flex justify-center items-start text-xl font-autolux-bold text-yellow-500"><span style="text-shadow: 1px 1px 3px gray;">30€</span></div>
-                    </div>
-                </div>
-                <div style="background-image: url('./img/card\ background.jpg'); background-size: cover;" class="w-80 h-auto min-h-[560px] flex flex-col justify-between items-center py-5 pt-10 border border-black border-8 hover:scale-110 transition">
-                    <div class="w-full h-[20%]">
-                        <div class="w-full h-[60px] flex justify-center items-end text-xl font-autolux-bold text-yellow-500"><span style="text-shadow: 1px 1px 3px gray;">Standard</span></div>
-                    </div>
-                    <div class="w-100 h-[60%] flex flex-col justify-start items-center">
-                        <span class="text-white text-xl my-2">Inside</span>
-                        <span class="text-white text-xl my-2">Outside</span>
-                        <span class="text-white text-xl my-2">Hand Brushed Armchairs</span>
-                    </div>
-                    <div class="w-100 h-[20%]">
-                        <div class="w-full h-[60px] flex justify-center items-start text-xl font-autolux-bold text-yellow-500"><span style="text-shadow: 1px 1px 3px gray;">75€</span></div>
-                    </div>
-                </div>
-                <div style="background-image: url('./img/card\ background.jpg'); background-size: cover;" class="w-80 h-auto min-h-[560px] flex flex-col justify-between items-center py-5 pt-10 border border-black border-8 hover:scale-110 transition">
-                    <div class="w-full h-[20%]">
-                        <div class="w-full h-[60px] flex justify-center items-end text-xl font-autolux-bold text-yellow-500"><span style="text-shadow: 1px 1px 3px gray;">Premium</span></div>
-                    </div>
-                    <div class="w-100 h-[60%] flex flex-col justify-start items-center">
-                        <span class="text-white text-xl my-2">Inside</span>
-                        <span class="text-white text-xl my-2">Outside</span>
-                        <span class="text-white text-xl my-2">Armchairs with upholstery washer</span>
-                        <span class="text-white text-xl my-2">Rims</span>
-                    </div>
-                    <div class="w-100 h-[20%]">
-                        <div class="w-full h-[60px] flex justify-center items-start text-xl font-autolux-bold text-yellow-500"><span style="text-shadow: 1px 1px 3px gray;">125€</span></div>
-                    </div>
-                </div>
-            </div>  
+            <p class="mt-10 text-white font-autolux w-full xl:w-1/2 text-center text-lg xl:text-xl">At Lavage Unique, we specialise in providing the highest quality car wash and detailing service, designed to maintain and enhance the beauty of your luxury vehicle. We know that every car is unique, which is why each service we offer is customised to the specific needs of your vehicle.</p>
 
-            <span class="flex justify-center items-center py-2 text-lg w-full uppercase text-yellow-500 mt-10">Customized services</span>
+            <div class="flex flex-col xl:flex-row justify-between items-center gap-5 w-full px-1 xl:px-72 mt-10">
 
-            <div class="py-2 md:mx-auto md:w-[40%] flex flex-col lg:flex-row justify-between items-center mt-5 md:ps-32">
-                <div class="options w-[80%] md:w-[50%]">
-                    <label class="text-white font-autolux text-xs"><input style="color: rgb(234 179 8) !important;" class="my-3 color-checkbox" type="checkbox" switch name="option" value="Interior" data-price="30"> Inside - 30€</label><br>
-                    <label class="text-white font-autolux text-xs"><input style="color: rgb(234 179 8) !important;" class="my-3 color-checkbox" type="checkbox" switch name="option" value="Exterior" data-price="20"> Outside - 20€</label><br>
-                    <label class="text-white font-autolux text-xs"><input style="color: rgb(234 179 8) !important;" class="my-3 color-checkbox" type="checkbox" switch name="option" value="Llantas" data-price="15"> Rims - 15€</label><br>
-                    <label class="text-white font-autolux text-xs"><input style="color: rgb(234 179 8) !important;" class="my-3 color-checkbox" type="checkbox" switch name="option" value="Encerado" data-price="15"> Waxing - 15€</label><br>
-                    <label class="text-white font-autolux text-xs"><input style="color: rgb(234 179 8) !important;" class="my-3 color-checkbox" type="checkbox" switch name="option" value="Antiinsectos" data-price="20"> Anti-insects - 20€</label><br>
-                    <label class="text-white font-autolux text-xs"><input style="color: rgb(234 179 8) !important;" class="my-3 color-checkbox" type="checkbox" switch name="option" value="Interior y tapicería" data-price="75"> Inside & upholstery - 75€</label><br>
-                </div>
-                <div class="w-[50%] flex justify-start items-start mt-5">
-                    <p class="text-white text-xs md:text-xl font-autolux">Total: <span id="total" class="text-xl md:text-4xl text-yellow-500 font-autolux">0</span>€</p>
-                </div>
+                <a href="#" class="card-service flex flex-col justify-between items-center py-20 px-5 h-[500px] xl:h-[600px] w-full xl:w-[350px]" style="background-image: url('./img/basico.jpeg'); background-size: cover; background-position: center;">
+
+                    <h3 class="text-white font-cormorant uppercase text-4xl">Basic</h3>
+
+                    <ul class="text-white font-cormorant text-center text-3xl">
+                        <li>Dashboard</li>
+                        <li>Vacuuming</li>
+                        <li>Exterior washed</li>
+                    </ul>
+
+                    <span class="uppercase pt-2 pb-1 px-10 bg-beige hover:bg-black hover:text-white hover:border hover:border-white border border-white text-black font-autolux-bold text-md transition">More information</span>
+
+                </a>
+
+                <a class="card-service flex flex-col justify-between items-center py-20 px-5 h-[500px] xl:h-[600px] w-full xl:w-[350px]" style="background-image: url('./img/medio.jpeg'); background-size: cover; background-position: center;">
+
+                    <h3 class="text-white font-cormorant uppercase text-4xl">Medium</h3>
+
+                    <ul class="text-white font-cormorant text-center text-3xl">
+                        <li>Dashboard</li>
+                        <li>Vacuuming</li>
+                        <li>Exterior washed</li>
+                        <li class="uppercase font-bold">All detailing</li>
+                    </ul>
+
+                    <span class="uppercase pt-2 pb-1 px-10 bg-beige hover:bg-black hover:text-white hover:border hover:border-white border border-white text-black font-autolux-bold text-md transition">More information</span>
+
+                </a>
+
+                <a class="card-service flex flex-col justify-between items-center py-20 px-5 h-[500px] xl:h-[600px] w-full xl:w-[350px]" style="background-image: url('./img/premium.jpeg'); background-size: cover; background-position: center;">
+
+                    <h3 class="text-white font-cormorant uppercase text-4xl">Premium</h3>
+
+                    <ul class="text-white font-cormorant text-center text-3xl">
+                        <li>Dashboard</li>
+                        <li>Vacuuming</li>
+                        <li>Exterior washed</li>
+                        <li>Wheel rim treatment</li>
+                        <li>Upholstery</li>
+                    </ul>
+
+                    <span class="uppercase pt-2 pb-1 px-10 bg-beige hover:bg-black hover:text-white hover:border hover:border-white border border-white text-black font-autolux-bold text-md transition">More information</span>
+
+                </a>
+
+                
+
             </div>
 
         </section>
@@ -172,31 +186,82 @@
 
 
 
-        <!-- RESERVAS -->
-        <section id="reservas" class="w-full h-auto md:h-[700px] py-20 px-5 text-white" style="background-image: url('./img/ferrari-interior.webp'); background-size: cover;">
+        <!-- PRECIOS  -->
+        <section id="precios" class="w-full h-auto py-20 px-5 text-white flex flex-col justify-center items-center" style="background-image: url('./img/mustang-fondo.jpeg'); background-size: cover; background-position: center;">
 
-            <h2 class="text-center text-xl md:text-2xl text-white font-autolux-bold text-shadow-black">Bookings</h2>
-            <span class="flex justify-center items-center py-2 text-lg w-full uppercase text-yellow-500 text-shadow-black">Appointment</span>
+            <h2 class="font-cormorant text-4xl xl:text-5xl text-white uppercase text-center">Prices</h2>
+            <p class="text-beige font-autolux mt-5 text-xl xl:text-xl text-center">Exclusivity at your reach</p>
 
-            <div class="py-2 md:mt-40 mb-20">
-                <p class="mt-3 w-full text-center text-shadow-black md:text-lg">Make an appointment and reserve a time for the special care of your vehicle.</p>
-                <p class="mt-3 w-full text-center text-shadow-black md:text-lg">Contact us via email or phone call.</p>
-            </div>
+            <p class="mt-10 text-white font-autolux w-full xl:w-1/2 text-center text-lg xl:text-xl">At Lavage Unique we offer a fully personalised luxury car wash and detailing service, tailored to the needs of each vehicle. We know that your car is a valuable investment and that each one has specific requirements, so our prices reflect the quality, care and attention your vehicle deserves.</p>
 
-            <div class="flex justify-center">
-                <a href="#contacto" class="py-4 px-12 bg-yellow-500 hover:bg-black hover:text-yellow-500 hover:border hover:border-yellow-500 text-black font-autolux text-xs transition">Contact</a>
+            <div class="w-full">
+
+                <div class="table-container">
+                    <table class="pricing-table font-autolux text-xl xl:text-3xl">
+                        <thead>
+                            <tr>
+                                <th style="background-color: transparent !important; border: none !important;"></th>
+                                <th class="bg-red">Basic</th>
+                                <th class="bg-gray">Medium</th>
+                                <th class="bg-beige text-black">Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-xl xl:text-5xl">S</td>
+                                <td class="bg-red font-cormorant text-xl xl:text-5xl">50€</td>
+                                <td class="bg-gray font-cormorant text-xl xl:text-5xl">75€</td>
+                                <td class="bg-beige text-black font-cormorant text-xl xl:text-5xl">100€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-xl xl:text-5xl">M</td>
+                                <td class="bg-red font-cormorant text-xl xl:text-5xl">65€</td>
+                                <td class="bg-gray font-cormorant text-xl xl:text-5xl">80€</td>
+                                <td class="bg-beige text-black font-cormorant text-xl xl:text-5xl">125€</td>
+                            </tr>
+                            <tr>
+                                <td class="text-xl xl:text-5xl">L</td>
+                                <td class="bg-red font-cormorant text-xl xl:text-5xl">75€</td>
+                                <td class="bg-gray font-cormorant text-xl xl:text-5xl">100€</td>
+                                <td class="bg-beige text-black font-cormorant text-xl xl:text-5xl">170€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="m-auto text-center font-autolux text-lg mt-10">For enquiries about prices, sizes and information <a href="#contacto" class="font-bold hover:text-red-700">contact us</a></p>
+
             </div>
 
         </section>
+
+        <!-- A DOMICILIO -->
+
+        <section id="domicilio" class="w-full h-auto py-40 px-5 text-white bg-gradient flex flex-col justify-center items-center">
+
+            <h2 class="font-cormorant text-4xl xl:text-5xl text-white uppercase text-center">At home</h2>
+            <p class="text-beige font-autolux mt-5 text-xl xl:text-xl text-center">On your doorstep, quick and easy</p>
+
+            <p class="mt-10 text-white font-autolux w-full xl:w-1/2 text-center text-lg xl:text-xl m-auto">Enjoy the comfort of an impeccable car without having to leave your home.</p>
+            <p class="mt-4 text-white font-autolux w-full xl:w-1/2 text-center text-lg xl:text-xl m-auto">Our home car wash service brings the cleaning of your vehicle directly to your door, with the highest quality and speed. Forget about wasting time in a traditional car wash, we take care of everything, using the best products and professional techniques to leave your car as good as new.</p>
+
+            <div class="flex flex-col xl:flex-row gap-0 xl:gap-5">
+                <a href="#contacto" class="mt-12 uppercase pt-2 pb-1 px-10 bg-beige hover:bg-black hover:text-white hover:border hover:border-white border border-white text-black font-autolux-bold text-md transition text-center">Order your home wash</a>
+                <a href="./lavado-de-coches-a-domicilio-marbella.html" class="mt-12 uppercase pt-2 pb-1 px-10 bg-black hover:bg-white text-white hover:text-black hover:border hover:border-white border border-white text-black font-autolux-bold text-md transition text-center">Know more</a>
+            </div>
+
+
+        </section>
+
 
         <!-- GALERÍA DE IMÁGENES -->
 
-        <section id="galeria" class="w-full h-auto py-20 px-5 text-white bg-black">
+        <section id="galeria" class="w-full h-auto py-20 px-5 text-white bg-gradient-2">
 
-            <h2 class="text-center text-xl md:text-2xl text-white font-autolux-bold text-shadow-black">Gallery</h2>
-            <span class="flex justify-center items-center py-2 text-lg w-full uppercase text-yellow-500 text-shadow-black">Take a look at our work</span>
+            <h2 class="font-cormorant text-4xl xl:text-5xl text-white uppercase text-center">Gallery</h2>
+            <p class="text-beige font-autolux mt-5 text-xl xl:text-xl text-center">Take a look at our work</p>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mx-4 mt-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mx-4 xl:mx-32 mt-10">
                 <div class="grid gap-4">
                     <div>
                         <img class="h-auto max-w-full rounded-lg drop-shadow-lg" src="./img/gallery1.webp" alt="">
@@ -234,27 +299,29 @@
         </section>
 
         <!-- CONTACTO -->
-        <section id="contacto" class="w-full h-auto py-10 pb-20 px-5 bg-black">
+        <section id="contacto" class="w-full h-auto py-10 pb-20 px-5 bg-gradient">
 
-            <h2 class="text-center text-xl md:text-2xl text-white font-autolux-bold text-shadow-black">Contact</h2>
-            <span class="flex justify-center items-center py-2 text-lg w-full uppercase text-yellow-500 text-shadow-black">We look forward to hearing from you</span>
+            <h2 class="font-cormorant text-4xl xl:text-5xl text-white uppercase text-center">Contact</h2>
+            <p class="text-beige font-autolux mt-5 text-xl xl:text-xl text-center">We will be pleased to help you</p>
 
             <div class="py-2 md:mx-auto md:w-[80%] min-h-[500px] flex flex-col md:flex-row justify-center items-center mt-5 md:mt-20">
+
                 <div class="w-[50%] h-auto flex justify-center items-center">
-                    <img src="./img/logo_LU_coche.png" class="w-[80%]" alt="logo autolux detailing en Marbella">
+                    <img src="./img/LU_logo.svg" class="w-[40%]" alt="logo autolux detailing en Marbella">
                 </div>
-                <div class="w-[80%] md:w-[50%] h-auto md:h-[500px] flex flex-col justify-between items-end mt-5">
 
-                    <a href="tel:+34683494559" class="w-full md:w-[60%] h-[100px] md:h-[120px] my-5 md:my-0 bg-card-price hover-contact ps-8 md:ps-10 text-xxs md:text-sm text-white text-shadow-black font-autolux flex  md:justify-start items-center hover:text-yellow-500">
-                        <span class="text-3xl font-sans"><i class="text-yellow-500 bi bi-telephone"></i></span><span>&nbsp;&nbsp;683 494 559</span>
+                <div class="w-[80%] md:w-[70%] h-auto md:h-[500px] flex flex-col justify-between items-end mt-5">
+
+                    <a href="tel:+34683494559" class="w-full md:w-[60%] h-[100px] md:h-[120px] my-5 md:my-0 bg-beige hover-contact ps-8 md:ps-10 text-xxs md:text-sm text-black font-autolux flex  md:justify-start items-center">
+                        <i class="text-black text-xl xl:text-3xl bi bi-telephone-fill"></i><span class="ms-4 text-2xl xl:text-3xl">683 494 559</span>
                     </a>
 
-                    <a href="mailto:lavageunique@gmail.com" class="w-full md:w-[60%] h-[100px] md:h-[120px] my-5 md:my-0 bg-card-price hover-contact ps-8 md:ps-10 text-xxs md:text-sm text-white text-shadow-black font-autolux flex  md:justify-start items-center hover:text-yellow-500">
-                        <span class="text-3xl font-sans"><i class="text-yellow-500 bi bi-envelope"></i></span><span class="md:text-xl text-xxxs">&nbsp;&nbsp;lavageunique@gmail.com</span>
+                    <a href="mailto:lavageuniquemarbella@gmail.com" class="w-full md:w-[60%] h-[100px] md:h-[120px] my-5 md:my-0 bg-beige hover-contact ps-8 md:ps-10 text-xxs md:text-sm text-black font-autolux flex  md:justify-start items-center">
+                        <i class="text-black text-xl xl:text-3xl bi bi-envelope-fill"></i><span class="ms-4 text-[0.9rem] xl:text-2xl">lavageuniquemarbella@gmail.com</span>
                     </a>
 
-                    <a href="https://www.instagram.com/lavageuniquemarbella" class="w-full md:w-[60%] h-[100px] md:h-[120px] my-5 md:my-0 bg-card-price hover-contact ps-8 md:ps-10 text-xxs md:text-sm text-white text-shadow-black font-autolux flex  md:justify-start items-center hover:text-yellow-500">                    
-                        <span class="text-3xl font-sans"><i class="text-yellow-500 bi bi-instagram"></i></span><span class="text-xxxs">&nbsp;&nbsp;@lavageuniquemarbella</span>
+                    <a href="https://www.instagram.com/lavageuniquemarbella/" class="w-full md:w-[60%] h-[100px] md:h-[120px] my-5 md:my-0 bg-beige hover-contact ps-8 md:ps-10 text-xxs md:text-sm text-black font-autolux flex  md:justify-start items-center">
+                        <i class="text-black text-xl xl:text-3xl bi bi-instagram"></i><span class="ms-4 text-xl xl:text-2xl">@lavageuniquemarbella</span>
                     </a>
 
                 </div>
@@ -267,33 +334,45 @@
 
 
     <!-- FOOTER -->
-    <footer class="bg-black text-white  md:min-h-[auto]">
-        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-6">
+    <footer class="bg-red text-white  md:min-h-[auto]">
+
+        <a href="https://wa.link/gr0hbx"><img src="./img/whatsapp.png" alt="whatsapp contact" class="h-16 whatsapp hover:scale-105"></a>
+
+        <div class="w-full max-w-screen-xl mx-auto p-4 pt-12 pb-6">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                    <img src="./img/logo_LU.png" class="h-12" alt="Flowbite Logo" />
-                    <span class="self-center text-lg font-semibold whitespace-nowrap font-autolux hover:text-yellow-500 business-name">Lavage Unique</span>
+                    <img src="./img/logo_lavageUnique.svg" class="h-6" alt="Flowbite Logo" />
                 </a>
-                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 font-autolux">
+                <ul class="flex flex-wrap items-center gap-4 mb-6 text-sm font-medium text-white sm:mb-0 font-autolux">
                     <li>
-                        <a href="#inicio"    class="hover:text-yellow-500 me-4 md:me-6 text-xxxs">Home</a>
+                        <a href="#servicios"   class="uppercase font-autolux text-md xl:text-xl">Services</a>
                     </li>
                     <li>
-                        <a href="#servicios" class="hover:text-yellow-500 me-4 md:me-6 text-xxxs">Services</a>
+                        <a href="#precios" class="uppercase font-autolux text-md xl:text-xl">Prices</a>
                     </li>
                     <li>
-                        <a href="#reservas"  class="hover:text-yellow-500 me-4 md:me-6 text-xxxs">Bookings</a>
+                        <a href="./carwash-at-home-marbella.html" class="uppercase font-autolux text-md xl:text-xl">At home</a>
                     </li>
                     <li>
-                        <a href="#galeria"   class="hover:text-yellow-500 me-4 md:me-6 text-xxxs">Gallery</a>
+                        <a href="#galeria"   class="uppercase font-autolux text-md xl:text-xl">Gallery</a>
                     </li>
                     <li>
-                        <a href="#contacto"  class="hover:text-yellow-500 me-4 md:me-6 text-xxxs">Contact</a>
+                        <a href="#contacto"  class="uppercase font-autolux text-md xl:text-xl">Contact</a>
                     </li>
                 </ul>
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" />
-            <span class="block text-sm text-white sm:text-center">Designed and built by <a href="https://www.carlosmanso.es" class="text-yellow-500 hover:text-white">Carlos Manso</a></span>
+            <div class="flex flex-col xl:flex-row justify-start xl:justify-center items-start xl:items-center gap-1 xl:gap-5">
+                <div class="flex gap-5">
+                    <a href="./politica-privacidad.html" class="text-sm xl:text-md text-white sm:text-center font-autolux">Privacy Policy</a>
+                    <a href="./aviso-legal.html" class="text-sm xl:text-md text-white sm:text-center font-autolux">Legal Notice</a>
+                </div>
+
+                <div class="flex ">
+                    <span class="text-sm xl:text-md text-white sm:text-center font-autolux">Designed and built by <a href="https://www.carlosmanso.es/en.html" class="font-bold">Carlos Manso</a></span>
+                </div>
+
+            </div>
         </div>
     </footer>
     
@@ -303,7 +382,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 
     <script src="script.js"></script>
-
 
 </body>
 </html>
