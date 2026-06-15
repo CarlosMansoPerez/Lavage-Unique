@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lavage Unique – Marbella</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">Lavage<span>Unique</span></div>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#precios">Precios</a>
+      <a href="#domicilio">A Domicilio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <div class="lang"><span class="active">ES</span><span>|</span><a href="./en.html">EN</a></div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+  <video src="./img/Autolux.mp4" autoplay muted loop playsinline></video>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Marbella · Costa del Sol</p>
+    <h1 class="hero-title">
+      <span class="thin">El arte del</span>
+      Detailing<br>
+      <span style="color: var(--gold);">de Lujo</span>
+    </h1>
+    <p class="hero-sub">Cuidado minucioso para vehículos de alta gama. Técnicas de vanguardia y productos premium donde cada detalle refleja la perfección.</p>
+    <div class="hero-btns">
+      <a href="#contacto" class="btn-primary">Reservar Ahora</a>
+      <a href="#precios" class="btn-secondary">Ver Precios</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-val">500+</div><div class="stat-label">Vehículos tratados</div></div>
+      <div><div class="stat-val">100%</div><div class="stat-label">Satisfacción garantizada</div></div>
+      <div><div class="stat-val">A+</div><div class="stat-label">Productos Premium</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="fade-in">
+    <p class="section-label">Nuestros Servicios</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:end;">
+      <h2 class="section-title">Tratamientos<br><span class="gold">de Élite</span></h2>
+      <p class="section-sub">Cada servicio diseñado para restituir y preservar la perfección original de su vehículo, con una atención que va más allá de lo convencional.</p>
+    </div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card fade-in">
+      <span class="service-icon" aria-hidden="true">◈</span>
+      <span class="service-badge">Esencial</span>
+      <div class="service-name">Básico</div>
+      <p class="service-desc">La limpieza esencial que su vehículo merece, ejecutada con precisión milimétrica.</p>
+      <ul class="service-features">
+        <li>Limpieza de salpicadero</li>
+        <li>Aspirado completo interior</li>
+        <li>Lavado exterior premium</li>
+        <li>Secado sin arañazos</li>
+      </ul>
+    </div>
+    <div class="service-card featured fade-in">
+      <span class="service-icon" style="color:var(--gold)" aria-hidden="true">◈</span>
+      <span class="service-badge">Más Popular</span>
+      <div class="service-name" style="color:var(--gold-light)">Medio</div>
+      <p class="service-desc">Todo el paquete básico más un detailing completo que devuelve el brillo original.</p>
+      <ul class="service-features">
+        <li>Todo el servicio Básico</li>
+        <li>Detailing interior completo</li>
+        <li>Acondicionamiento de plásticos</li>
+        <li>Lustre de cristales</li>
+        <li>Ambientador premium</li>
+      </ul>
+    </div>
+    <div class="service-card fade-in">
+      <span class="service-icon" aria-hidden="true">◈</span>
+      <span class="service-badge">Premium</span>
+      <div class="service-name">Premium</div>
+      <p class="service-desc">La experiencia de detailing definitiva. Tratamiento integral de cada superficie de su vehículo.</p>
+      <ul class="service-features">
+        <li>Todo el servicio Medio</li>
+        <li>Tratamiento de llantas</li>
+        <li>Limpieza de tapicería</li>
+        <li>Hidratación de cuero</li>
+        <li>Protección de pintura</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PRECIOS -->
+<div class="pricing-section" id="precios">
+  <div class="pricing-inner">
+    <div class="fade-in">
+      <p class="section-label">Tarifas Transparentes</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:end;">
+        <h2 class="section-title">Precios según<br><span class="gold">Tamaño</span></h2>
+        <p class="section-sub">Seleccione el tamaño de su vehículo. Los precios se actualizan instantáneamente. Sin sorpresas ni costes ocultos.</p>
+      </div>
+    </div>
+    <div class="size-selector fade-in">
+      <button class="size-btn active" data-size="S" onclick="selectSize('S',this)">Pequeño (S)</button>
+      <button class="size-btn" data-size="M" onclick="selectSize('M',this)">Mediano (M)</button>
+      <button class="size-btn" data-size="L" onclick="selectSize('L',this)">Grande (L)</button>
+    </div>
+    <div class="pricing-grid fade-in">
+      <!-- Básico -->
+      <div class="price-card">
+        <div class="price-tier">Nivel 01</div>
+        <div class="price-tag"><span class="euro">€</span><span class="price-num" id="price-basico">50</span></div>
+        <div class="price-name">Básico</div>
+        <ul class="price-features">
+          <li><span class="check">✦</span> Salpicadero y habitáculo</li>
+          <li><span class="check">✦</span> Aspirado completo</li>
+          <li><span class="check">✦</span> Lavado exterior</li>
+          <li><span class="check">✦</span> Secado técnico</li>
+        </ul>
+        <a href="#contacto" class="price-cta price-cta-outline">Reservar</a>
+      </div>
+      <!-- Medio -->
+      <div class="price-card featured-price">
+        <div style="position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--gold);color:#0a0a0a;font-size:0.6rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;padding:0.3rem 1.2rem;white-space:nowrap;">Más Solicitado</div>
+        <div class="price-tier" style="margin-top:1rem;">Nivel 02</div>
+        <div class="price-tag"><span class="euro">€</span><span class="price-num" id="price-medio">75</span></div>
+        <div class="price-name" style="color:var(--gold-light);">Medio</div>
+        <ul class="price-features">
+          <li><span class="check">✦</span> Todo el servicio Básico</li>
+          <li><span class="check">✦</span> Detailing completo</li>
+          <li><span class="check">✦</span> Plásticos y cristales</li>
+          <li><span class="check">✦</span> Ambientador premium</li>
+        </ul>
+        <a href="#contacto" class="price-cta price-cta-main">Reservar Ahora</a>
+      </div>
+      <!-- Premium -->
+      <div class="price-card">
+        <div class="price-tier">Nivel 03</div>
+        <div class="price-tag"><span class="euro">€</span><span class="price-num" id="price-premium">100</span></div>
+        <div class="price-name">Premium</div>
+        <ul class="price-features">
+          <li><span class="check">✦</span> Todo el servicio Medio</li>
+          <li><span class="check">✦</span> Tratamiento de llantas</li>
+          <li><span class="check">✦</span> Limpieza de tapicería</li>
+          <li><span class="check">✦</span> Protección de pintura</li>
+        </ul>
+        <a href="#contacto" class="price-cta price-cta-outline">Reservar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- A DOMICILIO -->
+<div id="domicilio" style="padding:7rem 0;max-width:1200px;margin:0 auto;padding-left:2rem;padding-right:2rem;">
+  <div class="fade-in" style="margin-bottom:3rem;">
+    <p class="section-label">Comodidad Absoluta</p>
+    <h2 class="section-title">En tu puerta,<br><span class="gold">Rápido y Fácil</span></h2>
+  </div>
+  <div class="domicilio-wrap fade-in">
+    <div class="domicilio-left">
+      <p style="font-size:0.78rem;font-weight:300;color:#909090;line-height:2;margin-bottom:0.5rem;">Servicios profesionales de detailing en la comodidad de su hogar, oficina o urbanización. Sin desplazamientos, sin esperas. La excelencia llega hasta usted.</p>
+      <ul class="domicilio-points">
+        <li>
+          <span class="num">01</span>
+          <div class="text">
+            <h4>Reserva en minutos</h4>
+            <p>Contacte por WhatsApp o teléfono y coordinamos su cita de forma inmediata.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <div class="text">
+            <h4>Llegamos equipados</h4>
+            <p>Toda la maquinaria y productos premium necesarios en un solo desplazamiento.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <div class="text">
+            <h4>Resultado impecable</h4>
+            <p>Acabado de showroom garantizado. Su vehículo, como el primer día.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="domicilio-right">
+      <div style="margin-bottom:2rem;">
+        <div style="font-size:3.5rem;font-weight:900;color:rgba(201, 168, 76, 0.621);letter-spacing:-0.04em;line-height:1;">DOOR<br>TO<br>DOOR</div>
+      </div>
+      <p class="section-label" style="margin-bottom:1.5rem;">Cobertura en</p>
+      <div style="display:flex;flex-wrap:wrap;gap:0.6rem;">
+        <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:0.5px solid rgba(201,168,76,0.3);color:var(--gold);padding:0.4rem 0.9rem;">Marbella</span>
+        <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:0.5px solid rgba(255,255,255,0.1);color:#888;padding:0.4rem 0.9rem;">Puerto Banús</span>
+        <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:0.5px solid rgba(255,255,255,0.1);color:#888;padding:0.4rem 0.9rem;">San Pedro</span>
+        <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:0.5px solid rgba(255,255,255,0.1);color:#888;padding:0.4rem 0.9rem;">Estepona</span>
+        <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:0.5px solid rgba(255,255,255,0.1);color:#888;padding:0.4rem 0.9rem;">Benahavís</span>
+        <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:0.5px solid rgba(255,255,255,0.08);color:#555;padding:0.4rem 0.9rem;">+consultar</span>
+      </div>
+      <a href="https://wa.me/34683494559?text=Hola, me interesa el servicio a domicilio de Lavage Unique" style="display:inline-block;margin-top:2.5rem;" class="btn-primary">Reservar a Domicilio →</a>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="fade-in">
+    <p class="section-label">Nuestro Trabajo</p>
+    <h2 class="section-title">Acabados<br><span class="gold">Espejo</span></h2>
+  </div>
+  <div class="gallery-grid fade-in">
+    <div class="gallery-item" style="border:0.5px solid rgba(255,255,255,0.06);">
+      <div class="gallery-img g1" style="height:100%;min-height:460px;position:relative;">
+        <img src="./img/gallery3.webp" class="gallery-img" alt="">
+      </div>
+      <div class="gallery-overlay"><span class="gallery-label">Detailing Integral</span></div>
+    </div>
+    <div class="gallery-item" style="border:0.5px solid rgba(255,255,255,0.06);">
+      <div class="gallery-img g2" style="height:100%;position:relative;">
+          <img src="./img/gallery8.webp" class="gallery-img" alt="">
+      </div>
+      <div class="gallery-overlay"><span class="gallery-label">Tratamiento Llantas</span></div>
+    </div>
+    <div class="gallery-item" style="border:0.5px solid rgba(255,255,255,0.06);">
+      <div class="gallery-img g3" style="height:100%;position:relative;">
+          <img src="./img/gallery4.webp" class="gallery-img" alt="">
+      </div>
+      <div class="gallery-overlay"><span class="gallery-label">Interior Premium</span></div>
+    </div>
+    <div class="gallery-item" style="border:0.5px solid rgba(255,255,255,0.06);">
+      <div class="gallery-img g4" style="height:100%;position:relative;">
+        <img src="./img/lavado-coche-domicilio.webp" class="gallery-img" alt="">
+      </div>
+      <div class="gallery-overlay"><span class="gallery-label">Lavado Exterior</span></div>
+    </div>
+    <div class="gallery-item" style="border:0.5px solid rgba(255,255,255,0.06);">
+      <div class="gallery-img g5" style="height:100%;position:relative;">
+        <img src="./img/gallery2.webp" class="gallery-img" alt="">
+      </div>
+      <div class="gallery-overlay"><span class="gallery-label">Limpieza de Motor</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACTO -->
+<div class="contact-section" id="contacto">
+  <div class="contact-inner">
+    <div class="fade-in">
+      <p class="section-label">Hablemos</p>
+      <h2 class="section-title">Reserva tu<br><span class="gold">Cita</span></h2>
+      <p class="section-sub" style="margin:1.5rem 0 3rem;">Estamos disponibles para atenderle en Marbella y sus alrededores. Contáctenos por cualquier vía.</p>
+      <a href="https://wa.me/34683494559" class="contact-link" target="_blank">
+        <span class="contact-icon">◈</span>
+        <div class="contact-text">
+          <h4>WhatsApp · Llamada</h4>
+          <p>683 494 559</p>
+        </div>
+      </a>
+      <a href="mailto:lavageuniquemarbella@gmail.com" class="contact-link">
+        <span class="contact-icon">◈</span>
+        <div class="contact-text">
+          <h4>Email</h4>
+          <p>lavageuniquemarbella@gmail.com</p>
+        </div>
+      </a>
+      <a href="https://instagram.com/lavageuniquemarbella" target="_blank" class="contact-link">
+        <span class="contact-icon">◈</span>
+        <div class="contact-text">
+          <h4>Instagram</h4>
+          <p>@lavageuniquemarbella</p>
+        </div>
+      </a>
+      <a href="https://instagram.com/lavageuniquemarbella" target="_blank" class="contact-link">
+        <span class="contact-icon">◈</span>
+        <div class="contact-text">
+          <h4>Ubicación</h4>
+          <p>C/ Bahía 49, Edf. Cuatro Vientos, San Pedro de Alcántara, Málaga</p>
+        </div>
+      </a>
+      <div style="display:flex;gap:1rem;margin-top:2rem;">
+        <a href="https://wa.me/34683494559?text=Hola, me interesa reservar un servicio de Lavage Unique" target="_blank" class="btn-primary" style="font-size:0.68rem;">WhatsApp →</a>
+        <a href="tel:+34683494559" class="btn-secondary" style="font-size:0.68rem;">Llamar</a>
+      </div>
+    </div>
+    
+    <form
+  action="https://formspree.io/f/mdajbvjd"
+  method="POST"
+  onsubmit="handleSubmit(event)"
+  style="background:rgba(255,255,255,0.02);border:0.5px solid rgba(255,255,255,0.07);padding:2.5rem;"
+>
+  <!-- Campo honeypot anti-spam (oculto) -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <div class="form-grid">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" name="name" placeholder="Su nombre completo" required>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+    </div>
+  </div>
+  <div class="form-grid">
+    <div class="form-group">
+      <label>Teléfono</label>
+      <input type="tel" name="telefono" placeholder="+34 000 000 000">
+    </div>
+    <div class="form-group">
+      <label>Vehículo</label>
+      <input type="text" name="vehiculo" placeholder="Marca, modelo y año">
+    </div>
+  </div>
+  <div class="form-grid">
+    <div class="form-group">
+      <label>Servicio</label>
+      <select name="servicio">
+        <option value="">Seleccionar...</option>
+        <option>Básico</option>
+        <option>Medio</option>
+        <option>Premium</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Tamaño</label>
+      <select name="tamano">
+        <option value="">Seleccionar...</option>
+        <option>S – Pequeño</option>
+        <option>M – Mediano</option>
+        <option>L – Grande</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Dirección (si es a domicilio)</label>
+    <input type="text" name="direccion" placeholder="Marbella, Puerto Banús...">
+  </div>
+  <div class="form-group">
+    <label>Mensaje</label>
+    <textarea name="message" rows="3" placeholder="Cualquier detalle adicional sobre su vehículo..."></textarea>
+  </div>
+
+  <div id="form-status"></div>
+  <button type="submit" class="btn-primary" style="width:100%;text-align:center;border:none;padding:1rem;">
+    Enviar Solicitud de Reserva
+  </button>
+</form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Lavage<span class="gold">Unique</span></div>
+      <div class="footer-copy" style="margin-top:0.5rem;">Lavado y Detailing de Lujo · Marbella</div>
+    </div>
+    <div class="footer-social">
+      <a href="https://wa.me/34683494559" target="_blank" title="WhatsApp">WA</a>
+      <a href="https://instagram.com/lavageuniquemarbella" target="_blank" title="Instagram">IG</a>
+      <a href="mailto:lavageuniquemarbella@gmail.com" title="Email">@</a>
+      <a href="tel:+34683494559" title="Llamar">☏</a>
+    </div>
+    <div class="footer-copy">Diseñado y construido por <a href="https://carlosmanso.es" style="color: var(--gold);">carlosmanso.es</a></div>
+  </div>
+</footer>
+
+<script>
+const prices = {
+  S: { basico: 50, medio: 75, premium: 100 },
+  M: { basico: 65, medio: 80, premium: 125 },
+  L: { basico: 75, medio: 100, premium: 170 }
+};
+
+function selectSize(size, btn) {
+  document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const ids = ['basico', 'medio', 'premium'];
+  ids.forEach(id => {
+    const el = document.getElementById('price-' + id);
+    el.classList.add('updating');
+  });
+  setTimeout(() => {
+    ids.forEach(id => {
+      const el = document.getElementById('price-' + id);
+      el.textContent = prices[size][id];
+      el.classList.remove('updating');
+    });
+  }, 220);
+}
+
+// function submitForm() {
+//   const btn = event.target;
+//   btn.textContent = '✦ Solicitud enviada — nos pondremos en contacto';
+//   btn.style.background = 'rgba(201,168,76,0.15)';
+//   btn.style.color = 'var(--gold)';
+//   btn.style.border = '0.5px solid rgba(201,168,76,0.3)';
+//   btn.disabled = true;
+// }
+async function handleSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
+  const status = document.getElementById('form-status');
+
+  btn.textContent = 'Enviando...';
+  btn.disabled = true;
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      status.innerHTML = '<p style="color:#C9A84C;font-size:0.74rem;letter-spacing:0.08em;margin-bottom:1rem;">✦ Solicitud enviada — nos pondremos en contacto en breve.</p>';
+      form.reset();
+      btn.textContent = 'Enviado';
+      btn.style.background = 'rgba(201,168,76,0.15)';
+      btn.style.color = 'var(--gold)';
+      btn.style.border = '0.5px solid rgba(201,168,76,0.3)';
+    } else {
+      throw new Error();
+    }
+  } catch {
+    status.innerHTML = '<p style="color:#c0392b;font-size:0.74rem;margin-bottom:1rem;">Error al enviar. Por favor llámenos directamente al 683 494 559.</p>';
+    btn.textContent = 'Reintentar';
+    btn.disabled = false;
+  }
+}
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Lang toggle
+document.querySelectorAll('.lang span').forEach(s => {
+  if (s.textContent === '|') return;
+  s.style.cursor = 'pointer';
+  s.addEventListener('click', () => {
+    document.querySelectorAll('.lang span').forEach(x => x.classList.remove('active'));
+    s.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
